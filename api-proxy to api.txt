@@ -1,0 +1,7 @@
+title api-proxy to api
+
+User->Common Middleware:Make request
+Common Middleware->Common Middleware:setup proxy: disable x-powered-by, trust proxy
+Common Middleware->Session Middleware:next
+Session Middleware-> Session Middleware:set/get session (contain parameters) through cookie, use redis store
+Session Middleware-> Auth Middleware:next
