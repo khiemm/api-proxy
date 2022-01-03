@@ -1,0 +1,54 @@
+{
+  "name": "@fleetlog/api-proxy",
+  "version": "0.1.3",
+  "description": "Proxy for REST APIv2",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:fleetlog/api-proxy.git"
+  },
+  "scripts": {
+    "start": "node start.js"
+  },
+  "main": "coffee start.coffee",
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "body-parser": "^1.13.2",
+    "compression": "^1.5.1",
+    "config": "^1.15.0",
+    "connect-redis": "^3.2.0",
+    "cookie": "^0.2.0",
+    "cookie-parser": "^1.3.4",
+    "cors": "git+https://github.com/visvk/cors",
+    "express": "^4.13.1",
+    "express-api-helper": "0.0.5",
+    "express-content-length-validator": "0.0.4",
+    "express-session": "^1.14.2",
+    "express-validator": "^2.17.1",
+    "helmet": "^0.10.0",
+    "js-yaml": "^3.3.1",
+    "method-override": "^2.3.3",
+    "morgan": "^1.6.1",
+    "newrelic": "^1.24.0",
+    "passport": "^0.3.2",
+    "passport-saml": "^0.15.0",
+    "redis": "^0.12.1",
+    "sha1": "^1.1.1",
+    "simple-encryptor": "^1.0.3",
+    "socket.io": "^1.7.1",
+    "socket.io-redis": "^2.0.1",
+    "superagent": "^1.2.0",
+    "superagent-bluebird-promise": "^2.1.0",
+    "uuid": "^3.0.1",
+    "winston": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "grunt": "~0.4.x",
+    "grunt-cli": "*",
+    "grunt-env": "^0.4.2",
+    "grunt-mocha-test": "*",
+    "mocha": "^2.3.0",
+    "sinon": "^3.2.1",
+    "supertest": "^1.1.0"
+  }
+}
